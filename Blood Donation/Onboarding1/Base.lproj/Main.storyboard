@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m5z-FS-cXg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Blood_Donation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OBimg1" translatesAutoresizingMaskIntoConstraints="NO" id="V3p-JX-5gj">
+                                <rect key="frame" x="22" y="142" width="370" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="8fE-a2-rlz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Blood &amp; Oxygen" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7l-BU-YJj">
+                                <rect key="frame" x="88" y="527" width="238" height="29.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" name="primaryBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donors" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txu-IJ-8zV">
+                                <rect key="frame" x="166.5" y="558.5" width="81.5" height="29.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" name="primaryBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting those in need with willing donors. Your support can save lives and make a difference." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ff-Y4-N1a">
+                                <rect key="frame" x="25" y="608" width="364" height="38"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" name="lightGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ9-z0-qUI">
+                                <rect key="frame" x="20" y="768.5" width="74" height="43.5"/>
+                                <color key="tintColor" name="darkGrey"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="gotoWelcomeVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6oW-Ew-D3s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdV-vj-Mmi">
+                                <rect key="frame" x="317.5" y="768.5" width="76.5" height="43.5"/>
+                                <color key="tintColor" name="primaryRed"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Next">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="gotoOnboarding2VC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxr-rs-zX4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carousel1" translatesAutoresizingMaskIntoConstraints="NO" id="vYC-54-2gf">
+                                <rect key="frame" x="171.5" y="706" width="71" height="10"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="txu-IJ-8zV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0D2-X6-kvp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wQ9-z0-qUI" secondAttribute="bottom" constant="50" id="33p-Zg-Soi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IdV-vj-Mmi" secondAttribute="trailing" constant="20" id="BfJ-L7-Sc1"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ff-Y4-N1a" secondAttribute="trailing" constant="25" id="J3A-fx-DlM"/>
+                            <constraint firstItem="1Ff-Y4-N1a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="Nkc-MW-rka"/>
+                            <constraint firstItem="wQ9-z0-qUI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vvf-1M-m5O"/>
+                            <constraint firstItem="Y7l-BU-YJj" firstAttribute="top" secondItem="V3p-JX-5gj" secondAttribute="bottom" constant="35" id="bby-SQ-U5o"/>
+                            <constraint firstItem="vYC-54-2gf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bc0-hy-lfc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IdV-vj-Mmi" secondAttribute="bottom" constant="50" id="g5j-Vc-zDM"/>
+                            <constraint firstItem="vYC-54-2gf" firstAttribute="top" secondItem="1Ff-Y4-N1a" secondAttribute="bottom" constant="60" id="gLL-XP-SOJ"/>
+                            <constraint firstItem="V3p-JX-5gj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gUH-X6-LIm"/>
+                            <constraint firstItem="Y7l-BU-YJj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i6S-2t-jCW"/>
+                            <constraint firstItem="1Ff-Y4-N1a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j32-bl-OSn"/>
+                            <constraint firstItem="1Ff-Y4-N1a" firstAttribute="top" secondItem="txu-IJ-8zV" secondAttribute="bottom" constant="20" id="m6n-SR-7fi"/>
+                            <constraint firstItem="V3p-JX-5gj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="pTz-dC-9Yg"/>
+                            <constraint firstItem="txu-IJ-8zV" firstAttribute="top" secondItem="Y7l-BU-YJj" secondAttribute="bottom" constant="2" id="yhR-J6-3yg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M9N-sN-fJF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="985.50724637681162" y="-27.455357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1P5-bK-aEj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m5z-FS-cXg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WpI-sH-m4V">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KR0-2E-ubO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sr4-hE-us5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75.362318840579718" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OBimg1" width="370.5" height="206"/>
+        <image name="carousel1" width="71" height="10"/>
+        <namedColor name="darkGrey">
+            <color red="0.22745098039215686" green="0.2627450980392157" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lightGrey">
+            <color red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryBlack">
+            <color red="0.15294117647058825" green="0.16470588235294117" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.70980392156862748" green="0.0039215686274509803" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

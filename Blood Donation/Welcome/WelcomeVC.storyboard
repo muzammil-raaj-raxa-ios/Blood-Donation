@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeVC" id="Y6W-OH-hqX" customClass="WelcomeVC" customModule="Blood_Donation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WCimg" translatesAutoresizingMaskIntoConstraints="NO" id="n8J-gZ-PKx">
+                                <rect key="frame" x="44.666666666666657" y="109" width="304" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="xQN-GQ-Ttr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrN-yZ-U4t">
+                                <rect key="frame" x="125.33333333333333" y="459" width="142.66666666666669" height="24"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Dare">
+                                        <attributes>
+                                            <color key="NSColor" red="0.70980392156862748" green="0.0039215686274509803" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="To">
+                                        <attributes>
+                                            <color key="NSColor" red="0.22745098039215686" green="0.2627450980392157" blue="0.31764705882352939" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Donate">
+                                        <attributes>
+                                            <color key="NSColor" red="0.70980392156862748" green="0.0039215686274509803" blue="0.0078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Medium"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can donate for ones in need and request blood if you need." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57a-P3-ltu">
+                                <rect key="frame" x="25" y="533" width="343" height="39.666666666666629"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" name="lightGrey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE1-cI-GaN">
+                                <rect key="frame" x="25" y="672.66666666666663" width="343" height="42.333333333333371"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" name="primaryRed"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="LOGIN">
+                                    <color key="baseForegroundColor" name="primaryRed"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gotoLoginVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ldj-6X-t0E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gne-mu-321">
+                                <rect key="frame" x="25" y="725" width="343" height="43"/>
+                                <color key="backgroundColor" name="primaryRed"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="REGISTER">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gotoRegisterVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XSN-y6-szx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="57a-P3-ltu" firstAttribute="top" secondItem="QrN-yZ-U4t" secondAttribute="bottom" constant="50" id="12K-5n-BPq"/>
+                            <constraint firstItem="n8J-gZ-PKx" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="50" id="2xv-0S-1e3"/>
+                            <constraint firstItem="qE1-cI-GaN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="3DK-mm-J0M"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="57a-P3-ltu" secondAttribute="trailing" constant="25" id="E9J-IB-Qea"/>
+                            <constraint firstItem="qE1-cI-GaN" firstAttribute="top" secondItem="57a-P3-ltu" secondAttribute="bottom" constant="100" id="QZj-bS-0FD"/>
+                            <constraint firstItem="QrN-yZ-U4t" firstAttribute="top" secondItem="n8J-gZ-PKx" secondAttribute="bottom" id="SeO-zP-NI4"/>
+                            <constraint firstItem="gne-mu-321" firstAttribute="top" secondItem="qE1-cI-GaN" secondAttribute="bottom" constant="10" id="Tp7-0y-DL7"/>
+                            <constraint firstItem="n8J-gZ-PKx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ctU-fz-1j8"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qE1-cI-GaN" secondAttribute="trailing" constant="25" id="dnR-rX-Zi2"/>
+                            <constraint firstItem="57a-P3-ltu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="lAp-FZ-fmV"/>
+                            <constraint firstItem="QrN-yZ-U4t" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="o0z-92-TJd"/>
+                            <constraint firstItem="gne-mu-321" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="uGk-MM-Au2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gne-mu-321" secondAttribute="trailing" constant="25" id="vG7-Va-Jc5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginBtn" destination="qE1-cI-GaN" id="IAo-Il-alU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WCimg" width="304" height="265"/>
+        <namedColor name="lightGrey">
+            <color red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.70980392156862748" green="0.0039215686274509803" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
