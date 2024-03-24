@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Plc-9h-iYc">
+            <objects>
+                <navigationController id="VZA-B3-ff0" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="home" selectedImage="home" id="oau-CV-xAf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JDz-7F-AjV">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="primaryBlack"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="uk0-rY-rEf" kind="relationship" relationship="rootViewController" id="gkA-06-Vd6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mNd-Mc-V32" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1859" y="135"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="kHt-Se-dxL">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="uk0-rY-rEf" customClass="HomeVC" customModule="Blood_Donation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="brI-IM-xgV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICc-xj-QrG">
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLQ-OM-1I2">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8s-TP-Hd7" customClass="FSPagerView" customModule="FSPagerView">
+                                                <rect key="frame" x="40" y="15" width="334" height="150"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="150" id="ZDF-Jl-YD0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F7w-qm-Y3D" customClass="FSPageControl" customModule="FSPagerView">
+                                                <rect key="frame" x="172" y="185" width="70" height="10"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="6TG-68-0VC"/>
+                                                    <constraint firstAttribute="width" constant="70" id="Esu-oz-6Oo"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="800" id="4s6-mp-Hay"/>
+                                            <constraint firstItem="g8s-TP-Hd7" firstAttribute="top" secondItem="ZLQ-OM-1I2" secondAttribute="top" constant="15" id="JV4-J4-bxg"/>
+                                            <constraint firstAttribute="trailing" secondItem="g8s-TP-Hd7" secondAttribute="trailing" constant="40" id="M5c-o4-Jpl"/>
+                                            <constraint firstItem="F7w-qm-Y3D" firstAttribute="top" secondItem="g8s-TP-Hd7" secondAttribute="bottom" constant="20" id="Q0E-fU-R8w"/>
+                                            <constraint firstItem="g8s-TP-Hd7" firstAttribute="leading" secondItem="ZLQ-OM-1I2" secondAttribute="leading" constant="40" id="QvJ-M8-RSv"/>
+                                            <constraint firstItem="F7w-qm-Y3D" firstAttribute="centerX" secondItem="ZLQ-OM-1I2" secondAttribute="centerX" id="kun-pQ-nB9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZLQ-OM-1I2" firstAttribute="top" secondItem="ICc-xj-QrG" secondAttribute="top" id="6KJ-x5-i1H"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZLQ-OM-1I2" secondAttribute="bottom" id="TiS-un-xlt"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZLQ-OM-1I2" secondAttribute="trailing" id="X2v-uL-E7t"/>
+                                    <constraint firstItem="ZLQ-OM-1I2" firstAttribute="centerX" secondItem="ICc-xj-QrG" secondAttribute="centerX" id="cXH-iW-P6e"/>
+                                    <constraint firstItem="ZLQ-OM-1I2" firstAttribute="leading" secondItem="ICc-xj-QrG" secondAttribute="leading" id="dLR-iY-EMu"/>
+                                    <constraint firstItem="ZLQ-OM-1I2" firstAttribute="width" secondItem="ICc-xj-QrG" secondAttribute="width" id="rVX-uy-gMb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gEF-BO-jeP"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ICc-xj-QrG" firstAttribute="top" secondItem="gEF-BO-jeP" secondAttribute="top" id="995-si-mhR"/>
+                            <constraint firstItem="ICc-xj-QrG" firstAttribute="leading" secondItem="gEF-BO-jeP" secondAttribute="leading" id="GGd-Kn-joh"/>
+                            <constraint firstItem="ICc-xj-QrG" firstAttribute="bottom" secondItem="gEF-BO-jeP" secondAttribute="bottom" id="RwS-1W-NVV"/>
+                            <constraint firstItem="ICc-xj-QrG" firstAttribute="trailing" secondItem="gEF-BO-jeP" secondAttribute="trailing" id="XNv-WX-IAF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="MyD-T7-6JU">
+                        <barButtonItem key="leftBarButtonItem" image="square.grid.2x2.fill" catalog="system" id="XKi-rg-zcy">
+                            <color key="tintColor" name="primaryRed"/>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="bell.badge" catalog="system" id="R4S-Et-Ckb">
+                            <color key="tintColor" name="primaryBlack"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pagerControl" destination="F7w-qm-Y3D" id="32O-dE-aH9"/>
+                        <outlet property="pagerView" destination="g8s-TP-Hd7" id="Uzs-79-qe0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uWD-s9-qzN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1860.8695652173915" y="928.79464285714278"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="PHu-ya-ceQ">
+            <objects>
+                <viewController storyboardIdentifier="SearchVC" id="R5c-MJ-u6u" customClass="SearchVC" customModule="Blood_Donation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2CR-Qe-nXr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="GD9-Xr-SiK"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search" id="SeB-sD-uz4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AJP-mq-Waa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-659" y="929"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="tht-NK-COy">
+            <objects>
+                <viewController storyboardIdentifier="ReportVC" id="iwC-X4-9kd" customClass="ReportVC" customModule="Blood_Donation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ziY-xa-oAA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="DWw-0l-jmp"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Report" id="LSy-nF-ax8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="75o-xd-slg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="472" y="929"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="SQt-QP-zER">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="x6z-h7-pBv" customClass="ProfileVC" customModule="Blood_Donation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BKK-Jv-Uwx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SJj-He-1tw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="kHu-0u-2Cz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pd-g4-Zdc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="929"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U2V-Dm-JuD">
+            <objects>
+                <navigationController id="f2t-lL-idC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="report" selectedImage="report" id="Ext-uS-KPv"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1CP-14-iw9">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="primaryBlack"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iwC-X4-9kd" kind="relationship" relationship="rootViewController" id="3l7-6g-Ksb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usd-Jt-G4p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ukD-uP-chC">
+            <objects>
+                <navigationController id="O7O-CN-amd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="search" selectedImage="search" id="EYh-uH-lvz"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r39-Qr-5jM">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="primaryBlack"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="R5c-MJ-u6u" kind="relationship" relationship="rootViewController" id="TfL-YE-vL0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5uj-ff-beg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-659" y="135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8ab-ie-cwP">
+            <objects>
+                <navigationController id="6Y3-C1-atz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="profile" selectedImage="profile" id="4aY-yz-idI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fBt-DD-R4r">
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="primaryBlack"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="x6z-h7-pBv" kind="relationship" relationship="rootViewController" id="0AL-Ax-2oG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipd-N7-ENR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="135"/>
+        </scene>
+        <!--Tab BarVC-->
+        <scene sceneID="6se-Qz-0wS">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="Zgd-PP-ViK" customClass="TabBarVC" customModule="Blood_Donation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bGo-C3-Hsd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="primaryRed"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="VZA-B3-ff0" kind="relationship" relationship="viewControllers" id="lzN-Ha-TMt"/>
+                        <segue destination="O7O-CN-amd" kind="relationship" relationship="viewControllers" id="TGa-so-qF5"/>
+                        <segue destination="f2t-lL-idC" kind="relationship" relationship="viewControllers" id="Uzw-Xm-Hxc"/>
+                        <segue destination="6Y3-C1-atz" kind="relationship" relationship="viewControllers" id="0GB-8X-09l"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIb-vP-GDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="-756"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell.badge" catalog="system" width="117" height="128"/>
+        <image name="home" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
+        <image name="report" width="24" height="24"/>
+        <image name="search" width="24" height="24"/>
+        <image name="square.grid.2x2.fill" catalog="system" width="128" height="114"/>
+        <namedColor name="primaryBlack">
+            <color red="0.15294117647058825" green="0.16470588235294117" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryRed">
+            <color red="0.70980392156862748" green="0.0039215686274509803" blue="0.0078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

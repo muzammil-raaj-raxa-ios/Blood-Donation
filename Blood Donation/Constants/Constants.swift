@@ -7,6 +7,11 @@
 
 import UIKit
 
+//MARK: - haptic feedback
+
+let haptic = UIImpactFeedbackGenerator(style: .heavy)
+
+
 //MARK: - pop gesture
 
 extension UIViewController {

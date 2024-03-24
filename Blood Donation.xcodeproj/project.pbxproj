@@ -14,6 +14,14 @@
 		3637ABE82BAD6650006EF9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3637ABE72BAD6650006EF9ED /* Assets.xcassets */; };
 		3637ABEB2BAD6650006EF9ED /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3637ABEA2BAD6650006EF9ED /* Base */; };
 		3639EFDF2BADA368009A50CC /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3639EFDE2BADA368009A50CC /* IQKeyboardManagerSwift */; };
+		364184A72BAFF05F004409DF /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364184A62BAFF05F004409DF /* TabBarVC.swift */; };
+		364184A92BAFF07A004409DF /* TabBarVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364184A82BAFF07A004409DF /* TabBarVC.storyboard */; };
+		364184AF2BAFF39A004409DF /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364184AE2BAFF39A004409DF /* HomeVC.swift */; };
+		364184B12BAFF3A8004409DF /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364184B02BAFF3A8004409DF /* SearchVC.swift */; };
+		364184B32BAFF3BD004409DF /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364184B22BAFF3BD004409DF /* ReportVC.swift */; };
+		364184B52BAFF3CA004409DF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364184B42BAFF3CA004409DF /* ProfileVC.swift */; };
+		364184BA2BB004AC004409DF /* HPVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364184B82BB004AC004409DF /* HPVCell.swift */; };
+		364184BB2BB004AC004409DF /* HPVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364184B92BB004AC004409DF /* HPVCell.xib */; };
 		364FBBD52BAD82DE003E3B67 /* Onboarding2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FBBD42BAD82DE003E3B67 /* Onboarding2VC.swift */; };
 		364FBBD72BAD8305003E3B67 /* Onboarding2VC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 364FBBD62BAD8305003E3B67 /* Onboarding2VC.storyboard */; };
 		364FBBD92BAD89A5003E3B67 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364FBBD82BAD89A5003E3B67 /* Constants.swift */; };
@@ -27,6 +35,7 @@
 		36B2F0192BAD70B2003818A4 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36B2F0152BAD70B2003818A4 /* Poppins-Medium.ttf */; };
 		36B2F01A2BAD70B2003818A4 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36B2F0162BAD70B2003818A4 /* Poppins-Thin.ttf */; };
 		36B2F01B2BAD70B2003818A4 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36B2F0172BAD70B2003818A4 /* Poppins-Regular.ttf */; };
+		566B814FE11922B8F416A7F7 /* Pods_Blood_Donation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E732704DE4252850DCC6DB0 /* Pods_Blood_Donation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +47,14 @@
 		3637ABE72BAD6650006EF9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3637ABEA2BAD6650006EF9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3637ABEC2BAD6650006EF9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		364184A62BAFF05F004409DF /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		364184A82BAFF07A004409DF /* TabBarVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarVC.storyboard; sourceTree = "<group>"; };
+		364184AE2BAFF39A004409DF /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		364184B02BAFF3A8004409DF /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		364184B22BAFF3BD004409DF /* ReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportVC.swift; sourceTree = "<group>"; };
+		364184B42BAFF3CA004409DF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		364184B82BB004AC004409DF /* HPVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPVCell.swift; sourceTree = "<group>"; };
+		364184B92BB004AC004409DF /* HPVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HPVCell.xib; sourceTree = "<group>"; };
 		364FBBD42BAD82DE003E3B67 /* Onboarding2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2VC.swift; sourceTree = "<group>"; };
 		364FBBD62BAD8305003E3B67 /* Onboarding2VC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding2VC.storyboard; sourceTree = "<group>"; };
 		364FBBD82BAD89A5003E3B67 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -51,6 +68,9 @@
 		36B2F0152BAD70B2003818A4 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		36B2F0162BAD70B2003818A4 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		36B2F0172BAD70B2003818A4 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		6D6838F272C1F0E5D94AB30A /* Pods-Blood Donation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blood Donation.release.xcconfig"; path = "Target Support Files/Pods-Blood Donation/Pods-Blood Donation.release.xcconfig"; sourceTree = "<group>"; };
+		9E732704DE4252850DCC6DB0 /* Pods_Blood_Donation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blood_Donation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44AFF8E931997C05B9F9CA3 /* Pods-Blood Donation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Blood Donation.debug.xcconfig"; path = "Target Support Files/Pods-Blood Donation/Pods-Blood Donation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +79,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3639EFDF2BADA368009A50CC /* IQKeyboardManagerSwift in Frameworks */,
+				566B814FE11922B8F416A7F7 /* Pods_Blood_Donation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054240EDA7018F9BBC433883 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C44AFF8E931997C05B9F9CA3 /* Pods-Blood Donation.debug.xcconfig */,
+				6D6838F272C1F0E5D94AB30A /* Pods-Blood Donation.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		361BEC3C2BAD689F00264F41 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +111,8 @@
 			children = (
 				3637ABDD2BAD664F006EF9ED /* Blood Donation */,
 				3637ABDC2BAD664F006EF9ED /* Products */,
+				054240EDA7018F9BBC433883 /* Pods */,
+				A3E4488387697EA8AD173BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,11 +128,13 @@
 			isa = PBXGroup;
 			children = (
 				364FBBD22BAD829C003E3B67 /* Helper */,
+				364184B62BB0044C004409DF /* xibs */,
 				364FBBD12BAD8272003E3B67 /* Onboarding1 */,
 				364FBBD32BAD82AA003E3B67 /* Onboarding2 */,
 				364FBBDB2BAD8A9F003E3B67 /* Welcome */,
 				364FBBE12BAD9996003E3B67 /* Login */,
 				364FBBE02BAD998B003E3B67 /* Register */,
+				364184A52BAFEFCF004409DF /* Views */,
 				364FBBDA2BAD89AE003E3B67 /* Constants */,
 				3637ABE72BAD6650006EF9ED /* Assets.xcassets */,
 				3637ABE92BAD6650006EF9ED /* LaunchScreen.storyboard */,
@@ -108,6 +142,68 @@
 				3637ABEC2BAD6650006EF9ED /* Info.plist */,
 			);
 			path = "Blood Donation";
+			sourceTree = "<group>";
+		};
+		364184A52BAFEFCF004409DF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				364184AA2BAFF35B004409DF /* Home */,
+				364184AD2BAFF374004409DF /* Search */,
+				364184AC2BAFF372004409DF /* Report */,
+				364184AB2BAFF36E004409DF /* Profile */,
+				364184A62BAFF05F004409DF /* TabBarVC.swift */,
+				364184A82BAFF07A004409DF /* TabBarVC.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		364184AA2BAFF35B004409DF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				364184AE2BAFF39A004409DF /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		364184AB2BAFF36E004409DF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				364184B42BAFF3CA004409DF /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		364184AC2BAFF372004409DF /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				364184B22BAFF3BD004409DF /* ReportVC.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		364184AD2BAFF374004409DF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				364184B02BAFF3A8004409DF /* SearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		364184B62BB0044C004409DF /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				364184B72BB00456004409DF /* HomePagerView */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		364184B72BB00456004409DF /* HomePagerView */ = {
+			isa = PBXGroup;
+			children = (
+				364184B82BB004AC004409DF /* HPVCell.swift */,
+				364184B92BB004AC004409DF /* HPVCell.xib */,
+			);
+			path = HomePagerView;
 			sourceTree = "<group>";
 		};
 		364FBBD12BAD8272003E3B67 /* Onboarding1 */ = {
@@ -157,8 +253,8 @@
 		364FBBE02BAD998B003E3B67 /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				364FBBE22BAD99B5003E3B67 /* RegisterVC.swift */,
 				364FBBE42BAD99C5003E3B67 /* RegisterVC.storyboard */,
+				364FBBE22BAD99B5003E3B67 /* RegisterVC.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -172,6 +268,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		A3E4488387697EA8AD173BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E732704DE4252850DCC6DB0 /* Pods_Blood_Donation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3637ABEF2BAD6650006EF9ED /* Build configuration list for PBXNativeTarget "Blood Donation" */;
 			buildPhases = (
+				0E12F9EB7D0956D90516BC4C /* [CP] Check Pods Manifest.lock */,
 				3637ABD72BAD664F006EF9ED /* Sources */,
 				3637ABD82BAD664F006EF9ED /* Frameworks */,
 				3637ABD92BAD664F006EF9ED /* Resources */,
+				5CD5823FEA8F3C626A6063F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,8 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				364FBBE92BAD9A9B003E3B67 /* LoginVC.storyboard in Resources */,
+				364184BB2BB004AC004409DF /* HPVCell.xib in Resources */,
 				364FBBE52BAD99C5003E3B67 /* RegisterVC.storyboard in Resources */,
 				3637ABE82BAD6650006EF9ED /* Assets.xcassets in Resources */,
+				364184A92BAFF07A004409DF /* TabBarVC.storyboard in Resources */,
 				3637ABEB2BAD6650006EF9ED /* Base in Resources */,
 				36B2F01B2BAD70B2003818A4 /* Poppins-Regular.ttf in Resources */,
 				3637ABE62BAD664F006EF9ED /* Base in Resources */,
@@ -252,18 +360,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E12F9EB7D0956D90516BC4C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Blood Donation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CD5823FEA8F3C626A6063F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blood Donation/Pods-Blood Donation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Blood Donation/Pods-Blood Donation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Blood Donation/Pods-Blood Donation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3637ABD72BAD664F006EF9ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				364FBBD92BAD89A5003E3B67 /* Constants.swift in Sources */,
+				364184B12BAFF3A8004409DF /* SearchVC.swift in Sources */,
+				364184AF2BAFF39A004409DF /* HomeVC.swift in Sources */,
 				364FBBD52BAD82DE003E3B67 /* Onboarding2VC.swift in Sources */,
 				364FBBE72BAD9A8F003E3B67 /* LoginVC.swift in Sources */,
 				3637ABE32BAD664F006EF9ED /* ViewController.swift in Sources */,
+				364184A72BAFF05F004409DF /* TabBarVC.swift in Sources */,
 				364FBBDD2BAD8ACE003E3B67 /* WelcomeVC.swift in Sources */,
+				364184B52BAFF3CA004409DF /* ProfileVC.swift in Sources */,
 				364FBBE32BAD99B5003E3B67 /* RegisterVC.swift in Sources */,
+				364184BA2BB004AC004409DF /* HPVCell.swift in Sources */,
 				3637ABDF2BAD664F006EF9ED /* AppDelegate.swift in Sources */,
+				364184B32BAFF3BD004409DF /* ReportVC.swift in Sources */,
 				3637ABE12BAD664F006EF9ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,12 +567,14 @@
 		};
 		3637ABF02BAD6650006EF9ED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44AFF8E931997C05B9F9CA3 /* Pods-Blood Donation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57BB6YGTBS;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Blood Donation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -440,12 +598,14 @@
 		};
 		3637ABF12BAD6650006EF9ED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6838F272C1F0E5D94AB30A /* Pods-Blood Donation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 57BB6YGTBS;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Blood Donation/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

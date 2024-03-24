@@ -48,6 +48,9 @@ class RegisterVC: UIViewController {
   
   @IBAction func gotoLoginVC(_ sender: UIButton) {
     CustomToast.show(message: "Registered Successfully!", bgColor: .primaryRed, textColor: .white, labelFont: .boldSystemFont(ofSize: 14), showIn: .bottom, controller: self)
+    
+    haptic.impactOccurred()
+    
     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
       let storyboard = UIStoryboard(name: "LoginVC", bundle: .main)
       if let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC") as? LoginVC {
